@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+button {
+  display: inline-block;
+  margin: 10px 30px;
+  width: 100px;
+}
+
+.app {
+  margin: 10% auto;
+  width: 80%;
+  text-align: center;
+  height: auto;
+}
+
+.graph {
+  height: 300px;
+}
+
+.bar-container {
+  display: inline-block;
+  width: 100px;
+  height: 100%;
+  margin: 30px;
+}
+
+.graph-bar {
+  height: auto;
+  border: 1px solid black;
+}
+
+/* .graph-label {
+  display: inline-block;
+} */
+
