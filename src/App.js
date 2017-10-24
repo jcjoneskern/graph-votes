@@ -8,9 +8,9 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      cat1: 1,
-      cat2: 2,
-      cat3: 3
+      cats: 0,
+      dogs: 0,
+      both: 0
     };
   }
 
@@ -18,9 +18,9 @@ class App extends Component {
     return (
       <div className="app">
         <Graph 
-          cat1 = { this.state.cat1 }
-          cat2 = { this.state.cat2 }
-          cat3 = { this.state.cat3 }
+          cats = { this.state.cats }
+          dogs = { this.state.dogs }
+          both = { this.state.both }
         />
         <Buttons onVote = { this.handleVote.bind(this) } />
       </div>

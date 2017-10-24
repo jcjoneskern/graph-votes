@@ -1,22 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class GraphBar extends Component {
-    render() {
-        let barHeight = {
-            height: (this.props.value / this.props.total).toFixed(2)*100 + "%"
-        }
-
-        return (
-            <div className="bar-container">
-                <div className="graph-bar" style={barHeight}>
-                    { this.props.value }
-                </div>
-                <div className="graph-label">
-                    { this.props.label }
-                </div>
-            </div>
-        );
+const GraphBar = (props) => {
+    let barHeight = {
+        height: (props.value / props.total).toFixed(2)*100 + "%"
     }
+
+    return (
+        <div className="bar-container">
+            <div className={`graph-bar ${props.label}`} style={barHeight}>
+                { props.value }
+            </div>
+            <div className="graph-label">
+                { props.label }
+            </div>
+        </div>
+    );
 }
 
 export default GraphBar;
